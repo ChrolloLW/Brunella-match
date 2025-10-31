@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ==========================================================
+   ?? Archivo base TailwindCSS para PixelMatch
+   ==========================================================
+   - No coloques clases como bg-orange-50 aquí directamente.
+   - Tailwind genera todo automáticamente al compilar.
+   - Este archivo solo define estilos base opcionales.
+   ========================================================== */
+
+html, body {
+  font-family: 'Pixelify Sans', system-ui, sans-serif;
+  @apply bg-white text-gray-900;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#root {
+  @apply min-h-screen w-full flex items-center justify-center;
+}
+
+* {
+  scroll-behavior: smooth;
+}
